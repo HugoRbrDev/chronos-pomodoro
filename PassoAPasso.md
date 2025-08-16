@@ -76,6 +76,14 @@ Copiar chave ssh do repositório; 7.4 - (Configurações git no vsCode):
 
     {
         "git init" - iniciar o git na pasta do projeto;
-        "git branch -m main" - trocar o nome da branch para main
-        "git config user.name"Hugo Rodrigues"" - configurar user
+        "git branch -m main" - trocar o nome da branch para main;
+        "git config user.name "Hugo Rodrigues"" - configurar user;
+        "git config user.email "hugorbrdev@gmail.com" - configurar email;
+        "git config core.eol lf" - configurar LF;
+        "git config core.autocrlf input";
+        "git config --list --local" - mostra todas as configurações feitas localmente;
+        "git add ." - Adicionar todos os arquivos no git;
+        "git status" - status;
+        "git commit -m "menssagem" - commitar;
+        "git reset --hard" - Voltar o projeto para o commit salvo
     }
