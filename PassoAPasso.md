@@ -83,9 +83,11 @@ Copiar chave ssh do repositório; 7.4 - (Configurações git no vsCode):
         "git config core.autocrlf input";
         "git config --list --local" - mostra todas as configurações feitas localmente;
         "git add ." - Adicionar todos os arquivos no git;
-        "git status" - status;
         "git commit -m "menssagem" - COMMIT;
+        "git push" - mandar pro gitHub PUSH
+        "git push origin main -u" - PUSH ORIGIN
+        "git status" - status;
         "git reset --hard" - RESET Voltar o projeto para o commit salvo
         "git remote add origin 'link ssh'" - adicionar conexão com repositório do gitHub
-        "git push origin main -u" - PUSH
+
     }
