@@ -85,9 +85,40 @@ Copiar chave ssh do repositório; 7.4 - (Configurações git no vsCode):
         "git add ." - Adicionar todos os arquivos no git;
         "git commit -m "menssagem" - COMMIT;
         "git push" - mandar pro gitHub PUSH
-        "git push origin main -u" - PUSH ORIGIN
+        "git push origin main -u" - PUSH (depois desse comando usando o -u, só basta fazer git push)
         "git status" - status;
         "git reset --hard" - RESET Voltar o projeto para o commit salvo
         "git remote add origin 'link ssh'" - adicionar conexão com repositório do gitHub
+
+    }
+
+8 (Criando componentes) - Dentro da pasta 'src' criar um arquivo 'App.tsx';
+8.1 - Exemplo de formato:
+
+    {
+        export function Nome do Componente() {
+        console.log('Oi');
+        return (
+        <> // essas <> estão aí, pois um componete pode retornar apenas um elemento
+            <h1>Hello World!</h1>
+            <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis,
+            labore soluta sapiente at iste blanditiis nihil officiis facere fugiat
+            deleniti recusandae ipsam assumenda molestiae sed, sequi cum fuga
+            placeat iure.
+            </p>
+        </>
+        );
+        }
+    }
+
+9 (Criando o CSS) - Existem formas de criar o CSS:
+
+    { 9.1(De forma global): Dessa forma o arquivo pode ser aplicado a qualquer elemento da página:
+
+        {
+            Dentro de src, crie uma pasta (styles), dentro dela crie os arquivos (global.css e theme.css) onde no (theme.css) ficam as variaveis - dessa forma, apenas alterando uma cor (ex: primary) altera em todo o projeto automaticamente. E então importe os dois arquivos (global.css e theme.css) dentro do componente (import './styles/theme.css';
+            import './styles/global.css';)
+        }
 
     }
