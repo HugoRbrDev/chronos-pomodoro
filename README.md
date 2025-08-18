@@ -120,5 +120,9 @@ Copiar chave ssh do repositório; 7.4 - (Configurações git no vsCode):
             Dentro de src, crie uma pasta (styles), dentro dela crie os arquivos (global.css e theme.css) onde no (theme.css) ficam as variaveis - dessa forma, apenas alterando uma cor (ex: primary) altera em todo o projeto automaticamente. E então importe os dois arquivos (global.css e theme.css) dentro do componente (import './styles/theme.css';
             import './styles/global.css';)
         }
+    9.2(De forma com escopos(css.modules)): Serve para elementos menores que irão compor determinada página (Como um <h1> específico por exemplo)
 
+        {
+            Dentro da pasta src, crie uma pasta (components) e dentro dessa pasta, crie os arquivos em questão com nome em PascalCase (por exemplo Heading.tsx). E dentro desse arquivo crie como um componente (Ex: import styles from './Heading.module.css'; export function Heading() { console.log(styles);return <h1 className={styles.heading}>Olá Mundo!</h1>;}) Esse componente de CSS terá um className, e o códigos CSS ficarão no (global.css)(Ex:.heading {background-color: blue;})
+        }
     }
